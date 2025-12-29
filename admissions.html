@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions | St. Icarus University</title>
+    <link rel="stylesheet" href="lot.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,400&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo-area">
+                <div class="logo-text">
+                    <h1>St. Icarus University</h1>
+                    <span class="motto">Est. 1894 • Ravenwood, VT</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#academics">Academics</a></li>
+                    <li><a href="admissions.html" class="active">Admissions</a></li>
+                    <li><a href="#apply-form" class="btn">Apply Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Join the Legacy</h2>
+            <p>Begin your journey at Ravenwood's most prestigious institution.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h3 class="section-title">Admission Requirements</h3>
+            <div class="requirements-box">
+                <ul>
+                    <li><strong>Academic Transcripts:</strong> Minimum GPA of 3.8.</li>
+                    <li><strong>Letters of Recommendation:</strong> Two letters required (one must be from a mentor).</li>
+                    <li><strong>Personal Essay:</strong> Topic: "How will you use knowledge to conquer darkness?"</li>
+                    <li><strong>Entrance Exam:</strong> Completion of the Ravenwood Aptitude Test.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="apply-form" class="section bg-light">
+        <div class="container">
+            <h3 class="section-title">Application Form (Fall 2025)</h3>
+            <form class="admissions-form">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="program">Program of Interest</label>
+                    <select id="program" name="program">
+                        <option value="arch">Theoretical Architecture</option>
+                        <option value="lit">Quantum Literature</option>
+                        <option value="phil">Advanced Philanthropy</option>
+                        <option value="undeclared">Undeclared</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="essay">Short Personal Statement</label>
+                    <textarea id="essay" name="essay" rows="5" placeholder="Tell us about yourself..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h3>St. Icarus University</h3>
+                <p>100 Griffin Way<br>Ravenwood, VT, USA</p>
+            </div>
+            <div class="footer-col">
+                <p>&copy; 2025 St. Icarus University. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+
+</body>
+</html>

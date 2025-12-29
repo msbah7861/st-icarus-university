@@ -1,0 +1,303 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-blue: #002147; /* Deep Navy */
+    --accent-gold: #C5B358;   /* Antique Gold */
+    --text-dark: #333;
+    --text-light: #f4f4f4;
+    --font-serif: 'Merriweather', serif;
+    --font-sans: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background-color: var(--primary-blue);
+    color: var(--text-light);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.motto {
+    font-size: 0.8rem;
+    color: var(--accent-gold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav a {
+    color: #ccc;
+    transition: color 0.3s;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.nav a:hover {
+    color: var(--accent-gold);
+}
+
+.nav .btn {
+    border: 1px solid var(--accent-gold);
+    padding: 8px 16px;
+    color: var(--accent-gold);
+    border-radius: 4px;
+}
+
+.nav .btn:hover {
+    background-color: var(--accent-gold);
+    color: var(--primary-blue);
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0, 33, 71, 0.7), rgba(0, 33, 71, 0.7)), url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-light);
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--accent-gold);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+.btn-gold {
+    background-color: var(--accent-gold);
+    color: var(--primary-blue);
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-gold:hover {
+    background-color: #e0cd70;
+}
+
+/* Sections */
+.section {
+    padding: 4rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--primary-blue);
+}
+
+.bg-light {
+    background-color: #f9f9f9;
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.stat-card h4 {
+    font-size: 2.5rem;
+    color: var(--accent-gold);
+}
+
+.about-text {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* Program Grid */
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.program-card {
+    background: white;
+    padding: 2rem;
+    border-top: 4px solid var(--primary-blue);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+}
+
+.program-card h4 {
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-blue);
+    color: #ccc;
+    padding: 3rem 0;
+    border-top: 5px solid var(--accent-gold);
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer h3, .footer h4 {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+/* --- ADMISSIONS PAGE STYLES --- */
+
+/* Smaller Header for Sub-pages */
+.page-header {
+    background-color: var(--primary-blue);
+    color: var(--text-light);
+    padding: 3rem 0;
+    text-align: center;
+    border-bottom: 5px solid var(--accent-gold);
+}
+
+.page-header h2 {
+    font-size: 2.5rem;
+    color: var(--accent-gold);
+}
+
+/* Requirements List */
+.requirements-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-left: 5px solid var(--primary-blue);
+}
+
+.requirements-box ul {
+    list-style-position: inside;
+}
+
+.requirements-box li {
+    margin-bottom: 10px;
+}
+
+/* Form Styles */
+.admissions-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--primary-blue);
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-blue);
+    color: var(--accent-gold);
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #001630;
+}
+
+/* Active link styling */
+.nav a.active {
+    color: var(--accent-gold);
+    border-bottom: 2px solid var(--accent-gold);
+}
